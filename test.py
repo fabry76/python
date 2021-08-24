@@ -1,4 +1,3 @@
-
 def clear_screen():
     import os
     ff = os.name
@@ -12,7 +11,7 @@ def clear_screen():
 def calculate(value):
     if value > 0:
         return f"\nThere are {value*60} minutes in {value} hours."
-    else value == 0:
+    elif value == 0:
         return("\nYou've entered a zero.")
    
 def check_int(value):
