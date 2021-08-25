@@ -9,18 +9,16 @@ def clear_screen():
         print(f"Your OS is Linux.\n")
 
 def calculate(value):
-    if value > 0:
-        return f"\nThere are {value*60} minutes in {value} hours."
-    elif value == 0:
-        return("\nYou've entered a zero.")
+    return f"\nThere are {value*60} minutes in {value} hours.\n"
    
 def check_int(value):
-    if value.isdigit():
+    try:
         var = int(value)
-        min = calculate(var)
-        print(min)
-    else:
-        print("\nYou have not entered an Integer number.")
+        if var >= 0:
+            calc = calculate(var)
+            print(calc)
+    except:
+        print("\nYou have not entered an Integer number.\n")
 
 clear_screen()
 print("This program will return the number of minutes in (x) hours.\n")
