@@ -26,5 +26,4 @@ hours = input("Enter the number of hours:\n(Multiple entries comma separated)\n"
 for i in hours.split(","):
     check_int(i)
 print (type(hours.split(",")))
-list(hours).append(77)
 print(hours)
