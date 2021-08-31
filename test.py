@@ -25,5 +25,4 @@ print("This program will return the number of minutes in (x) hours.\n")
 hours = input("Enter the number of hours:\n(Multiple entries comma separated)\n")
 for i in hours.split(","):
     check_int(i)
-print (type(hours.split(",")))
-print(hours)
+    print(hours)
