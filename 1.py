@@ -22,7 +22,7 @@ def check_int(value):
 
 clear_screen()
 print("This program will return the number of minutes in (x) hours.\n")
-hours = input("Enter the number of hours:\n(Multiple entries comma separated)\n")
-for i in hours.split(","):
+user_input = input("Enter the number of hours:\n(Multiple entries comma separated)\n")
+hours = user_input.split(",")
+for i in set(hours):
     check_int(i)
-    print(hours)
